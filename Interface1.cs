@@ -15,6 +15,11 @@ namespace ejercicio2
 	/// </summary>
 	public interface Comparacion
 	{
-		int Comparar(Alumnos a1, Alumnos a2);
+		//int Comparar(Alumnos a1, Alumnos a2);
+		bool sosIgual(Comparable a, Comparable b);
+		bool sosMayor(Comparable a, Comparable b);
+		bool sosMenor(Comparable a, Comparable b);
+		
 	}
+	
 }

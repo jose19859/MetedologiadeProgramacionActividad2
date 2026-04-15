@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alumnos.cs" />
+    <Compile Include="ComparacionPorValor.cs" />
     <Compile Include="Interface5.cs" />
     <Compile Include="IteradorParaCola.cs" />
     <Compile Include="IteradorParaConjunto.cs" />

@@ -15,10 +15,33 @@ namespace ejercicio2
 	/// </summary>
 	public class CompararporNombre:Comparacion
 	{
+		
+		public bool sosMayor(Comparable a,Comparable b)
+		{
+				if (!(a is Alumnos) || !(b is Alumnos))
+				return false;
+			return ((Alumnos)a).getDni()>((Alumnos)b).getDni();
+		}
+		
+		public bool sosMenor(Comparable a,Comparable b)
+		{
+				if (!(a is Alumnos) || !(b is Alumnos))
+				return false;
+			return ((Alumnos)a).getDni()<((Alumnos)b).getDni();
+		}
+		
+
+		public bool sosIgual(Comparable a,Comparable b)
+		{	if (!(a is Alumnos) || !(b is Alumnos))
+				return false;
+			return ((Alumnos)a).getDni()==((Alumnos)b).getDni();
+		}
+		
+		/*
 
 		public int Comparar(Alumnos a1,Alumnos a2)
 		{
 			return string.Compare(a1.Nombre,a2.Nombre);
-		}
+		}*/
 	}
 }

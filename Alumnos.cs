@@ -37,37 +37,50 @@ namespace ejercicio2
 		}
 		public  bool sosMayor(Comparable c)
 		{
-			if (c is Alumnos)
+			//if (c is Alumnos)
 			{
-				return this.estrategia.Comparar(this,(Alumnos)c) == 1;
+				return this.estrategia.sosMayor(this, c);
+				//return this.estrategia.Comparar(this,(Alumnos)c) == 1;
 			}
-			return false;
+			//return false;*/
 		}
 		public  bool sosMenor(Comparable c)
 		{
-			if (c is Alumnos)
+			
+			//if (c is Alumnos)
 			{
+				return this.estrategia.sosMenor(this, c);
 				
-				return this.estrategia.Comparar(this,(Alumnos)c) ==-1;
+			//	return this.estrategia.Comparar(this,(Alumnos)c) ==-1;
 			}
-			return false;
+			//return false;
 			
 		}
 		public  bool sosIgual(Comparable c)
 		{
-			if (c is Alumnos)
+			//if (c is Alumnos)
 			{
-				
-				return this.estrategia.Comparar(this,(Alumnos)c)==0;
+				return this.estrategia.sosIgual(this, c);
+			//	return this.estrategia.Comparar(this,(Alumnos)c)==0;
 			}
-			return false;
+			//return false;
 		}
 		
 		public override string ToString()
         {
             return "Nombre: " + this.Nombre + " | DNI: " + this.Dni + " | Promedio: " + this.Promedio;
         }
-		
+		public int getDni(){
+			return this.Dni;
+		}
+			public int getLegajo(){
+			return this.Legajo;}
+			public Double getPromedio(){
+			return this.Promedio;}
+			public string getNombre(){
+			return this.Nombre;}
+			
+		}
 	}
 
-}
+

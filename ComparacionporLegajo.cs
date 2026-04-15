@@ -15,7 +15,33 @@ namespace ejercicio2
 	/// </summary>
 	public class ComparacionporLegajo:Comparacion
 	{
-		public int Comparar(Alumnos a1,Alumnos a2)
+		
+	
+		public bool sosMayor(Comparable a,Comparable b)
+			
+		{
+			if (!(a is Alumnos) || !(b is Alumnos))
+				return false;
+			
+			return ((Alumnos)a).getDni()>((Alumnos)b).getDni();
+		}
+		
+		public bool sosMenor(Comparable a,Comparable b)
+		{
+				if (!(a is Alumnos) || !(b is Alumnos))
+				return false;
+			return ((Alumnos)a).getDni()<((Alumnos)b).getDni();
+		}
+		
+
+		public bool sosIgual(Comparable a,Comparable b)
+		{
+				if (!(a is Alumnos) || !(b is Alumnos))
+				return false;
+			return ((Alumnos)a).getDni()==((Alumnos)b).getDni();
+		}
+		
+		/*public int Comparar(Alumnos a1,Alumnos a2)
 		{
 			if (a1.Legajo>a2.Legajo)
 			{
@@ -28,7 +54,6 @@ namespace ejercicio2
 			else
 			{
 				return 0;
-			}
+			}*/
 		}
 	}
-}

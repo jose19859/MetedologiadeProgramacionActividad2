@@ -15,7 +15,12 @@ namespace ejercicio2
 		
 	{
 		private int Valor;
+		private Comparacion estrategia = new ComparacionPorValor();
 		public Numero (int V) { this.Valor =V;}
+		
+		public void setEstrategia(Comparacion e){
+			this.estrategia = e;
+		}
 		
 		public bool sosIgual(Comparable c)
 		{
